@@ -1,0 +1,13 @@
+This is an HTML page that checks if a user is eligible to vote based on their age. Here's a breakdown of its main components:
+
+- **HTML Structure**: The page is structured with standard HTML tags. It includes a `head` section where meta information, stylesheets, and scripts are defined, and a `body` section where the content of the page is placed.
+
+- **Bootstrap**: The page uses Bootstrap, a popular CSS framework, to style the elements. Bootstrap classes such as `container`, `text-center`, `form-control`, and `btn` are used to style the container, center the text, style the input field, and style the buttons, respectively.
+
+- **JavaScript Functions**: Two JavaScript functions are defined in the `head` section:
+    - `validateAge()`: This function is triggered when the "Check" button is clicked. It checks the value entered in the input field. If the value (representing age) is 18 or more, it displays a message indicating that the user is eligible to vote. If the value is less than 18, it displays a message indicating that the user is not eligible to vote.
+    - `clearFields()`: This function is triggered when the "Clear" button is clicked. It clears the input field and the display message, including the border style.
+
+- **Input Field and Buttons**: In the `body` section, there's an input field where the user can enter their age, a "Check" button that triggers the `validateAge()` function when clicked, and a "Clear" button that triggers the `clearFields()` function when clicked.
+
+- **Result Display**: The result of the eligibility check is displayed in a `div` element with the id `display`. The message is styled with Bootstrap's `text-success` or `text-danger` classes for eligible and non-eligible outcomes, respectively.
